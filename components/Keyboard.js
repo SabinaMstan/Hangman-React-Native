@@ -1,8 +1,8 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, FlatList } from 'react-native';
-import {getAlphabet} from '../utils/Alphabet';
+import { getAlphabet } from '../utils/Alphabet';
 import Button from './Button';
-import {styles} from '../utils/Styles';
+import { styles } from '../utils/Styles';
 
 const GenerateKeyboard = (props) => {
   const alphabet = getAlphabet();
@@ -20,7 +20,7 @@ const GenerateKeyboard = (props) => {
      style = {{alignItems: 'center'}}
      data = {alphabet}
      renderItem = {generateButtons}
-     numColumns = {10}
+     numColumns = {props.NR_COL}
     />
   );
 }

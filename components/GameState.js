@@ -1,5 +1,5 @@
-import React, {useState, useEffect} from 'react';
-import {Text} from 'react-native';
+import React, { useState, useEffect } from 'react';
+import { Text } from 'react-native';
 
 const GameState = (props) => {
   const [message, setMessage] = useState(`\nYou have ${props.lives} lives.\n\n`)

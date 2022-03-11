@@ -1,7 +1,7 @@
 
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import { TouchableOpacity, Text } from 'react-native';
-import {styles} from '../utils/Styles';
+import { styles } from '../utils/Styles';
 
 const Button = (props) => {
   const [disable, setDisable] = useState(false);
@@ -23,7 +23,7 @@ const Button = (props) => {
   }
 
   return (
-    <TouchableOpacity onPress={pressButton} style={[styles.letterButton, {backgroundColor}]} disabled = {disable}>
+    <TouchableOpacity onPress = {pressButton} style = {[styles.letterButton, {backgroundColor}]} disabled = {disable}>
       <Text style = {{color: 'white'}}>{props.letter}</Text>
     </TouchableOpacity>
   );

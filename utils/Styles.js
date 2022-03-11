@@ -16,6 +16,7 @@ export const styles = StyleSheet.create({
         width: 20,
         font: 16,
         borderWidth: 1,
+        color: 'black',
         textAlign: 'center',
     },
 
