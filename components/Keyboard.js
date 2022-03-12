@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, FlatList } from 'react-native';
 import { getAlphabet } from '../utils/Alphabet';
-import Button from './Button';
+import LetterButton from './LetterButton';
 import { styles } from '../utils/Styles';
 
 const GenerateKeyboard = (props) => {
@@ -11,7 +11,7 @@ const GenerateKeyboard = (props) => {
   const generateButtons = ({item}) => {
     props.getLetter(currentLetter);
     return (
-    <Button letter = {item} getLetter = {setCurrentLetter} gameOn = {props.gameOn}/>
+    <LetterButton letter = {item} getLetter = {setCurrentLetter} gameOn = {props.gameOn}/>
     );
   };
 
