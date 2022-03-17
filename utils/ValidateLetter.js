@@ -1,11 +1,11 @@
 import React from 'react';
 
-export const validateLetter = (wordState, letter, word, setLives, lives, countLetters, setCountLetters) => {
+export const validateLetter = (partialWord, letter, word, setLives, lives) => {
   let found = 0;
-  const newWord = wordState.map((item) => {
+  const newWord = partialWord.map((item) => {
     if (letter === word[item.id]) {
       item.letter = letter;
-      setCountLetters(++countLetters);
+      item.found = 1;
       found = 1;
     }
     return item;
